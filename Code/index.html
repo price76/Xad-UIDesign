@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+          crossorigin="anonymous"/>
+    <title>test</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">RN Roster</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">FP Roster</a>
+        </li>
+    </ul>
+    <div class="form-inline">
+        <input class="form-control mr-2" type="search" placeholder="Search Staff by Name">
+        <i class="search-icon fas fa-search"></i>
+        <button class="btn btn-success" id="myBtn"><i class="fas fa-plus mr-2"></i>Add new staff</button>
+    </div>
+</nav>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>
+            <div class="angle-down-icon">
+                <i class="fas fa-angle-down mr-1"></i>Overtime
+            </div>
+        </th>
+        <th>
+            <div class="angle-down-icon"><i class="fas fa-angle-down mr-1"></i>First Name</div>
+        </th>
+        <th>
+            <div class="angle-down-icon">
+                <i class="fas fa-angle-down mr-1"></i>Last Name
+            </div>
+        </th>
+        <th>Cell Number</th>
+        <th>Work Email</th>
+        <th>
+            <div class="angle-down-icon"><i class="fas fa-angle-down mr-1"></i>Shift</div>
+        </th>
+        <th>Status</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>0001</td>
+        <td>
+            <div class="circle orange-circle"></div>
+        </td>
+        <td class="black-text">Max</td>
+        <td class="black-text">Zadeh</td>
+        <td>+17037171865</td>
+        <td>max@george</td>
+        <td>Rotator</td>
+        <td>
+            <div class="status green-status">availble</div>
+        </td>
+        <td>
+            <button class="actionButton edit-icon"><i class="fas fa-edit"></i> edit</button>
+            <button class="actionButton trash-icon"><i class="fas fa-trash"></i> remove</button>
+        </td>
+    </tr>
+    <tr>
+        <td>0003</td>
+        <td>
+            <div class="circle green-circle"></div>
+        </td>
+        <td class="black-text">Mary</td>
+        <td class="black-text">Zadeh</td>
+        <td>+17037171865</td>
+        <td>max@george</td>
+        <td>Rotator</td>
+        <td>
+            <div class="status gray-status">do not disturb</div>
+        </td>
+        <td>
+            <button class="actionButton edit-icon"><i class="fas fa-edit"></i> edit</button>
+            <button class="actionButton trash-icon"><i class="fas fa-trash"></i> remove</button>
+        </td>
+    </tr>
+    <tr>
+        <td>0005</td>
+        <td>
+            <div class="circle red-circle"></div>
+        </td>
+        <td class="black-text">Meg</td>
+        <td class="black-text">Zadeh</td>
+        <td>+17037171865</td>
+        <td>max@george</td>
+        <td>Rotator</td>
+        <td>
+            <div class="status green-status">availble</div>
+        </td>
+        <td>
+            <button class="actionButton edit-icon"><i class="fas fa-edit"></i> edit</button>
+            <button class="actionButton trash-icon"><i class="fas fa-trash"></i> remove</button>
+        </td>
+    </tr>
+    <tr>
+        <td>0004445</td>
+        <td>
+            <div class="circle orange-circle"></div>
+        </td>
+        <td class="black-text">Kalinda</td>
+        <td class="black-text">Zadeh</td>
+        <td>+17037171865</td>
+        <td>max@george</td>
+        <td>Rotator</td>
+        <td>
+            <div class="status green-status">availble</div>
+        </td>
+        <td>
+            <button class="actionButton edit-icon"><i class="fas fa-edit"></i> edit</button>
+            <button class="actionButton trash-icon"><i class="fas fa-trash"></i> remove</button>
+        </td>
+    </tr>
+    <tr>
+        <td>000013344</td>
+        <td>
+            <div class="circle orange-circle"></div>
+        </td>
+        <td class="black-text">Rechel</td>
+        <td class="black-text">Zadeh</td>
+        <td>+17037171865</td>
+        <td>max@george</td>
+        <td>Rotator</td>
+        <td>
+            <div class="status gray-status ">do not disturb</div>
+        </td>
+        <td>
+            <button class="actionButton edit-icon"><i class="fas fa-edit"></i> edit</button>
+            <button class="actionButton trash-icon"><i class="fas fa-trash"></i> remove</button>
+        </td>
+    </tr>
+    <tr>
+        <td>00456</td>
+        <td>
+            <div class="circle green-circle"></div>
+        </td>
+        <td class="black-text">Sarah</td>
+        <td class="black-text">Zadeh</td>
+        <td>+17037171865</td>
+        <td>max@george</td>
+        <td>Rotator</td>
+        <td>
+            <div class="status green-status">availble</div>
+        </td>
+        <td>
+            <button class="actionButton edit-icon"><i class="fas fa-edit"></i> edit</button>
+            <button class="actionButton trash-icon"><i class="fas fa-trash"></i> remove</button>
+        </td>
+    </tr>
+    <tr>
+        <td>000786</td>
+        <td>
+            <div class="circle red-circle"></div>
+        </td>
+        <td class="black-text">Jane</td>
+        <td class="black-text">Zadeh</td>
+        <td>+17037171865</td>
+        <td>max@george</td>
+        <td>Rotator</td>
+        <td>
+            <div class="status green-status">availble</div>
+        </td>
+        <td>
+            <button class="actionButton edit-icon"><i class="fas fa-edit"></i> edit</button>
+            <button class="actionButton trash-icon"><i class="fas fa-trash"></i> remove</button>
+        </td>
+    </tr>
+    <tr>
+        <td>003442</td>
+        <td>
+            <div class="circle green-circle"></div>
+        </td>
+        <td class="black-text">Jon</td>
+        <td class="black-text">Zadeh</td>
+        <td>+17037171865</td>
+        <td>max@george</td>
+        <td>Rotator</td>
+        <td>
+            <div class="status gray-status">do not disturb</div>
+        </td>
+        <td>
+            <button class="actionButton edit-icon"><i class="fas fa-edit"></i> edit</button>
+            <button class="actionButton trash-icon"><i class="fas fa-trash"></i> remove</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4>Add New Staff</h4>
+            <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="form">
+                    <div class="col-12">
+                        <label class="form-label">ID</label>
+                        <input type="text" class="form-control mt-1">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form">
+                    <div class="col-6">
+                        <label class="form-label">First Name</label>
+                        <input type="text" class="form-control mt-1">
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label">Last Name</label>
+                        <input type="text" class="form-control mt-1">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form">
+                    <div class="col-12">
+                        <label class="form-label">Work Email</label>
+                        <input type="text" class="form-control mt-1">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form">
+                    <div class="col-6">
+                        <label class="form-label">Cell Number</label>
+                        <input type="text" class="form-control mt-1">
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label">Shift</label>
+                        <select class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form">
+                    <div class="col-12">
+                        <label class="form-label">َAdd Roles</label>
+                        <select class="form-control custom-select" multiple>
+                            <option value="1">NM</option>
+                            <option value="2">RN</option>
+                            <option value="3">FP</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form">
+                    <div class="col-12">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                        <label class="form-label">َGet Notification</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form">
+                    <div class="col-12">
+                        <button class="btn btn-success w-100">Add Staff</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var modal = document.getElementById("myModal");
+
+    var btn = document.getElementById("myBtn");
+
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function ()
+    {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function ()
+    {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function (event)
+    {
+        if (event.target == modal)
+        {
+            modal.style.display = "none";
+        }
+    }
+    
+</script>
+</body>
+</html>
